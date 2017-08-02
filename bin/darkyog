@@ -1,0 +1,3 @@
+#!/usr/bin/php
+<?php include __DIR__.'/../src/Darkyog.php';
+(new Darkyog())();

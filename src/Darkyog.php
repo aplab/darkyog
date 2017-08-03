@@ -108,7 +108,7 @@ class Darkyog
 
         for ($i = 1; $i < 100; $i++) {
             $this->set('Connection ' . $i, 'ObjectbrowserBkcolor', static::rgb('3C3F41'));
-            $this->set('Connection ' . $i, 'ObjectbrowserFgcolor', static::rgb('BBBBBB'));
+            $this->set('Connection ' . $i, 'ObjectbrowserFgcolor', static::rgb('ffffff'));
         }
 
         mkdir(dirname($this->path) . '/themes');

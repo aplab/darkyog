@@ -5,7 +5,7 @@
 	</framewindow>
 	
 	<mdiclient>
-		<background color1="0x4b6eaf" image="blue_bg.bmp" />
+		<background color1="0x3C3F41" />
 	</mdiclient>
 	
 	<mdichild>
@@ -44,31 +44,33 @@
 	</maintoolbar>
 	
 	<hsplitter>
-		<line color1="5585193" />
-		<background color1="0x3C3F41" />
+		<line color1="0x282828" />
+		<background color1="0x282828" />
 	</hsplitter>
 	
 	<vsplitter>
-		<line color1="5585193" />
-		<background color1="0x3C3F41" />
+		<line color1="0x282828" />
+		<background color1="0x282828" />
 	</vsplitter>
 	
 	<conntab tabbottomline="true">
-		<background color1="0x4b6eaf" color2="0x4b6eaf" />
-		<foreground color1="13218213" />
-		<selectedtab color2="13218213" />
-		<plusbutton color1="6770753" />
-		<closebutton color1="0xA1AEC7" />
+		<background color1="0x3C3F41" color2="0x3C3F41" />
+		<foreground color1="0xbbbbbb" color2="0xbbbbbb" color3="0xbbbbbb" />
+		<selectedtab color1="0xbbbbbb" color2="0xbbbbbb" />
+		<plusbutton color1="0xbbbbbb" color2="0xbbbbbb" />
+		<closebutton color1="0xbbbbbb" color2="0xbbbbbb" />
 		<seperator highlight="0x3C3F41" />
+		<tabtext color1="0xff0000" />
+		<seltabtext color1="0xff0000" />
 	</conntab>
 	
 	<querytab tabbottomline="true">
 		<background color1="0x3C3F41" color2="0x3C3F41" />
 		<foreground color1="5585193" color2="0x5E6A7F" color3="0x5E6A7F"/>
-		<selectedtab color2="0x4b6eaf" color1="0x4b6eaf" />
-		<seperator active="8217172" inactive="0x9bebeb" highlight="0xE3E7EB" />
-		<tabtext color1="16777215" />
-		<seltabtext color1="0" />
+		<selectedtab color2="0x515658" color1="0x515658" />
+		<seperator active="0x4B4B4B" inactive="0x4B4B4B" highlight="0x4B4B4B" />
+		<tabtext color1="0xbbbbbb" />
+		<seltabtext color1="0xffffff" />
 		<plusbutton color1="16777215" />
 		<dragarrow color1="4210943" />
 		<closebutton color1="0xA1AEC7" />
@@ -78,10 +80,10 @@
 	<restab tabbottomline="true">
 		<background color1="0x3C3E3F" color2="0x3C3E3F" />
 		<foreground color1="0x3C3E3F" color2="0x408e97" color3="0x408e97"/>
-		<selectedtab color2="0x4b6eaf" color1="0x4b6eaf" />
-		<seperator active="8217172" inactive="0x9bebeb" highlight="0xE3E7EB" />
-		<tabtext color1="16777215" />
-		<seltabtext color1="0" />
+		<selectedtab color2="0x515658" color1="0x515658" />
+		<seperator active="0x4B4B4B" inactive="0x4B4B4B" highlight="0x4B4B4B" />
+		<tabtext color1="0xbbbbbb" />
+		<seltabtext color1="0xffffff" />
 		<plusbutton color1="16777215" />
 		<dragarrow color1="4210943" />
 		<closebutton color1="0xA1AEC7" />
@@ -91,10 +93,10 @@
 	<tabletab tabbottomline="true" border="true">
 		<background color1="0x3C3E3F" color2="0x3C3E3F" />
 		<foreground color1="0x3C3E3F" color2="0x408e97" color3="0x408e97"/>
-		<selectedtab color2="0x4b6eaf" color1="0x4b6eaf" />
-		<seperator active="8217172" inactive="0x9bebeb" highlight="16777215" />
-		<tabtext color1="16777215" />
-		<seltabtext color1="0" />
+		<selectedtab color2="0x515658" color1="0x515658" />
+		<seperator active="0x4B4B4B" inactive="0x4B4B4B" highlight="0x4B4B4B" />
+		<tabtext color1="0xbbbbbb" />
+		<seltabtext color1="0xffffff" />
 		<plusbutton color1="16777215" />
 		<dragarrow color1="4210943" />
 		<hyperlink color1="0xFFFF80" />

@@ -84,24 +84,31 @@ class Darkyog
      */
     public function __invoke()
     {
-        $this->set('GENERALPREF', 'EditorBgColor', static::rgb('232525'));
-        $this->set('GENERALPREF', 'NormalColor', static::rgb('cc7832'));
-        $this->set('GENERALPREF', 'NumberColor', static::rgb('6897bb'));
-
-        $this->set('GENERALPREF', 'NumberMarginbackgroundColor', static::rgb('313335'));
-        $this->set('GENERALPREF', 'NumberMarginforegroundColor', static::rgb('5C6259'));
-
-        $this->set('GENERALPREF', 'FoldingMarginFgColor', static::rgb('555555'));
-        $this->set('GENERALPREF', 'FoldingMarginbackgroundColor', static::rgb('313335'));
-        $this->set('GENERALPREF', 'FoldingMarginTextureColor', static::rgb('313335'));
-
-        $this->set('GENERALPREF', 'CanvasBgColor', static::rgb('313335'));
-        $this->set('GENERALPREF', 'CanvasLineColor', static::rgb('313335'));
-        $this->set('GENERALPREF', 'CanvasTextColor', static::rgb('313335'));
-
-        $this->set('GENERALPREF', 'MTIBgColor', static::rgb('232525'));
-        $this->set('GENERALPREF', 'MTIFgColor', static::rgb('ffffff'));
-        $this->set('GENERALPREF', 'MTISelectionColor', static::rgb('232525'));
+        $this->set('GENERALPREF', 'EditorBgColor', static::rgb('232525'));#=2434339
+        $this->set('GENERALPREF', 'NormalColor', static::rgb('a9b7c6'));#=3307724
+        $this->set('GENERALPREF', 'CommentColor', static::rgb('808080'));#=8421376
+        $this->set('GENERALPREF', 'StringColor', static::rgb('6a8759'));#=255
+        $this->set('GENERALPREF', 'FunctionColor', static::rgb('ffc66d'));#=14499311
+        $this->set('GENERALPREF', 'KeywordColor', static::rgb('cc7832'));#=16735838
+        $this->set('GENERALPREF', 'NumberColor', static::rgb('6897bb'));#=12293992
+        $this->set('GENERALPREF', 'OperatorColor', static::rgb('cc7832'));#=128
+        $this->set('GENERALPREF', 'HiddenCmdColor', static::rgb('000000'));#=131586
+        $this->set('GENERALPREF', 'NumberMarginbackgroundColor', static::rgb('313335'));#=3486513
+        $this->set('GENERALPREF', 'NumberMarginforegroundColor', static::rgb('5C6259'));#=5857884
+        $this->set('GENERALPREF', 'FoldingMarginbackgroundColor', static::rgb('313335'));#=3486513
+        $this->set('GENERALPREF', 'FoldingMarginFgColor', static::rgb('555555'));#=5592405
+        $this->set('GENERALPREF', 'FoldingMarginTextureColor', static::rgb('313335'));#=3486513
+        $this->set('GENERALPREF', 'SelectionBgColor', static::rgb('214283'));#=12632256
+        $this->set('GENERALPREF', 'BraceLightBgColor', static::rgb('ffff00'));#=65535
+        $this->set('GENERALPREF', 'BraceLightFgColor', static::rgb('000000'));#=987135
+        $this->set('GENERALPREF', 'BraceBadBgColor', static::rgb('ff0000'));#=7303167
+        $this->set('GENERALPREF', 'BraceBadFgColor', static::rgb('ffffff'));#=0
+        $this->set('GENERALPREF', 'CanvasBgColor', static::rgb('313335'));#=3486513
+        $this->set('GENERALPREF', 'CanvasLineColor', static::rgb('313335'));#=3486513
+        $this->set('GENERALPREF', 'CanvasTextColor', static::rgb('313335'));#=3486513
+        $this->set('GENERALPREF', 'MTIBgColor', static::rgb('232525'));#=2434339
+        $this->set('GENERALPREF', 'MTIFgColor', static::rgb('ffffff'));#=16777215
+        $this->set('GENERALPREF', 'MTISelectionColor', static::rgb('232525'));#=2434339
 
         $this->set('Themedetails', 'ThemeFile', 'Dark.xml');
         $this->set('Themedetails', 'ThemeType', '2');

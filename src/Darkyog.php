@@ -84,9 +84,37 @@ class Darkyog
      */
     public function __invoke()
     {
-        $this->get('GENERALPREF', 'NormalColor');
-        $this->set('GENERALPREF', 'NormalColor', hexdec('00ffff'));
-        echo $this->store();
+        $this->set('GENERALPREF', 'EditorBgColor', static::rgb('232525'));
+        $this->set('GENERALPREF', 'NormalColor', static::rgb('cc7832'));
+        $this->set('GENERALPREF', 'NumberColor', static::rgb('6897bb'));
+
+        $this->set('GENERALPREF', 'NumberMarginbackgroundColor', static::rgb('313335'));
+        $this->set('GENERALPREF', 'NumberMarginforegroundColor', static::rgb('5C6259'));
+
+        $this->set('GENERALPREF', 'FoldingMarginFgColor', static::rgb('555555'));
+        $this->set('GENERALPREF', 'FoldingMarginbackgroundColor', static::rgb('313335'));
+        $this->set('GENERALPREF', 'FoldingMarginTextureColor', static::rgb('313335'));
+
+        $this->set('GENERALPREF', 'CanvasBgColor', static::rgb('313335'));
+        $this->set('GENERALPREF', 'CanvasLineColor', static::rgb('313335'));
+        $this->set('GENERALPREF', 'CanvasTextColor', static::rgb('313335'));
+
+        $this->set('GENERALPREF', 'MTIBgColor', static::rgb('232525'));
+        $this->set('GENERALPREF', 'MTIFgColor', static::rgb('ffffff'));
+        $this->set('GENERALPREF', 'MTISelectionColor', static::rgb('232525'));
+
+        for ($i = 1; $i < 100; $i++) {
+            $this->set('Connection ' . $i, 'ObjectbrowserBkcolor', static::rgb('3C3F41'));
+            $this->set('Connection ' . $i, 'ObjectbrowserFgcolor', static::rgb('BBBBBB'));
+        }
+
+
+        echo $this->store() . ' bytes written' . PHP_EOL;
+    }
+
+    protected static function rgb($rrggbb)
+    {
+        return hexdec(join(array_reverse(str_split($rrggbb, 2))));
     }
 
     /**

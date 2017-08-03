@@ -103,11 +103,16 @@ class Darkyog
         $this->set('GENERALPREF', 'MTIFgColor', static::rgb('ffffff'));
         $this->set('GENERALPREF', 'MTISelectionColor', static::rgb('232525'));
 
+        $this->set('Themedetails', 'ThemeFile', 'Dark.xml');
+        $this->set('Themedetails', 'ThemeType', '2');
+
         for ($i = 1; $i < 100; $i++) {
             $this->set('Connection ' . $i, 'ObjectbrowserBkcolor', static::rgb('3C3F41'));
             $this->set('Connection ' . $i, 'ObjectbrowserFgcolor', static::rgb('BBBBBB'));
         }
 
+        mkdir(dirname($this->path) . '/themes');
+        copy(__DIR__ . '/Dark.xml', dirname($this->path) . '/themes/Dark.xml');
 
         echo $this->store() . ' bytes written' . PHP_EOL;
     }

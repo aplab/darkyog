@@ -1,11 +1,11 @@
 <sqlyogtheme name="Dark">
 	<framewindow>
-		<background color1="0x9bebeb" />
+		<background color1="0x3C3F41" />
 		<!-- text active="16777215" inactive="16777215" / -->
 	</framewindow>
 	
 	<mdiclient>
-		<background color1="0xdcf1f1" image="blue_bg.bmp" />
+		<background color1="0x4b6eaf" image="blue_bg.bmp" />
 	</mdiclient>
 	
 	<mdichild>
@@ -15,57 +15,57 @@
 	</mdichild>
 	
 	<menu>
-		<background color1="0x4ad9d9" />
-		<foreground color2="0xdcf1f1" color1="0xffffff" />
-		<text active="0" inactive="8421504"/>
-		<seltext active="0" inactive="8421504"/>
-		<selected color1="0xdcf1f1" color2="0xdcf1f1" />
+		<background color1="0x3C3F41" />
+		<foreground color2="0x4b6eaf" color1="0x4b6eaf" />
+		<text active="0xbbbbbb" inactive="8421504"/>
+		<seltext active="0xbbbbbb" inactive="8421504"/>
+		<selected color1="0x4b6eaf" color2="0x4b6eaf" />
 	</menu>
 	
 	<menubar>
-		<background color1="0x36b1bf"/>
-		<foreground color2="0xdcf1f1" color1="0xffffff" />
-		<text active="0" inactive="8421504"/>
-		<seltext active="0" inactive="8421504"/>
-		<selected color1="0xdcf1f1" color2="0xdcf1f1" />
+		<background color1="0x3C3F41"/>
+		<foreground color2="0x4b6eaf" color1="0x4b6eaf" />
+		<text active="0xbbbbbb" inactive="8421504"/>
+		<seltext active="0xbbbbbb" inactive="8421504"/>
+		<selected color1="0x4b6eaf" color2="0x4b6eaf" />
 	</menubar>
 	
 	<toolbar>
-		<background color1="0x21c7da" />
-		<foreground color2="0xdcf1f1" color1="0xffffff" />
-		<selected color1="0xdcf1f1" color2="0xdcf1f1" />
+		<background color1="0x3C3F41" />
+		<foreground color2="0x4b6eaf" color1="0x4b6eaf" />
+		<selected color1="0x4b6eaf" color2="0x4b6eaf" />
 		<!-- text active="16777215" inactive="16777215" / -->
 	</toolbar>
 	
 	<maintoolbar>
-		<background color1="0xdcf1f1"/>
-		<foreground color2="0xdcf1f1" color1="0xffffff" />
-		<selected color1="0xdcf1f1" color2="0xdcf1f1" />
+		<background color1="0x3C3F41"/>
+		<foreground color2="0x4b6eaf" color1="0x4b6eaf" />
+		<selected color1="0x4b6eaf" color2="0x4b6eaf" />
 	</maintoolbar>
 	
 	<hsplitter>
 		<line color1="5585193" />
-		<background color1="0x36b1bf" />
+		<background color1="0x3C3F41" />
 	</hsplitter>
 	
 	<vsplitter>
 		<line color1="5585193" />
-		<background color1="0x36b1bf" />
+		<background color1="0x3C3F41" />
 	</vsplitter>
 	
 	<conntab tabbottomline="true">
-		<background color1="0xffffff" color2="0xdcf1f1" />
+		<background color1="0x4b6eaf" color2="0x4b6eaf" />
 		<foreground color1="13218213" />
 		<selectedtab color2="13218213" />
 		<plusbutton color1="6770753" />
 		<closebutton color1="0xA1AEC7" />
-		<seperator highlight="0x36b1bf" />
+		<seperator highlight="0x3C3F41" />
 	</conntab>
 	
 	<querytab tabbottomline="true">
-		<background color1="0x36b1bf" color2="0x36b1bf" />
+		<background color1="0x3C3F41" color2="0x3C3F41" />
 		<foreground color1="5585193" color2="0x5E6A7F" color3="0x5E6A7F"/>
-		<selectedtab color2="0xdcf1f1" color1="0xffffff" />
+		<selectedtab color2="0x4b6eaf" color1="0x4b6eaf" />
 		<seperator active="8217172" inactive="0x9bebeb" highlight="0xE3E7EB" />
 		<tabtext color1="16777215" />
 		<seltabtext color1="0" />
@@ -76,9 +76,9 @@
 	</querytab>
 	
 	<restab tabbottomline="true">
-		<background color1="0x24a2b0" color2="0x24a2b0" />
-		<foreground color1="0x24a2b0" color2="0x408e97" color3="0x408e97"/>
-		<selectedtab color2="0xdcf1f1" color1="0xffffff" />
+		<background color1="0x3C3E3F" color2="0x3C3E3F" />
+		<foreground color1="0x3C3E3F" color2="0x408e97" color3="0x408e97"/>
+		<selectedtab color2="0x4b6eaf" color1="0x4b6eaf" />
 		<seperator active="8217172" inactive="0x9bebeb" highlight="0xE3E7EB" />
 		<tabtext color1="16777215" />
 		<seltabtext color1="0" />
@@ -89,9 +89,9 @@
 	</restab>
 	
 	<tabletab tabbottomline="true" border="true">
-		<background color1="0x24a2b0" color2="0x24a2b0" />
-		<foreground color1="0x24a2b0" color2="0x408e97" color3="0x408e97"/>
-		<selectedtab color2="0xdcf1f1" color1="0xffffff" />
+		<background color1="0x3C3E3F" color2="0x3C3E3F" />
+		<foreground color1="0x3C3E3F" color2="0x408e97" color3="0x408e97"/>
+		<selectedtab color2="0x4b6eaf" color1="0x4b6eaf" />
 		<seperator active="8217172" inactive="0x9bebeb" highlight="16777215" />
 		<tabtext color1="16777215" />
 		<seltabtext color1="0" />

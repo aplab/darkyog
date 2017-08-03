@@ -84,7 +84,9 @@ class Darkyog
      */
     public function __invoke()
     {
-        $this->get('GENERALPREF', 'AutoCompleteTagsDir');
+        $this->get('GENERALPREF', 'NormalColor');
+        $this->set('GENERALPREF', 'NormalColor', hexdec('00ffff'));
+        echo $this->store();
     }
 
     /**
@@ -92,6 +94,7 @@ class Darkyog
      *
      * @param $section
      * @param $name
+     * @return bool|string
      */
     public function get($section, $name)
     {
@@ -107,7 +110,7 @@ class Darkyog
             if ($section_found) {
                 if (0 === strpos($line_ready, $name_ready)) {
                     $value = substr($line_ready, strlen($name_ready));
-                    echo $value;
+                    return $value;
                 }
             }
         }
@@ -125,7 +128,7 @@ class Darkyog
         $section_found = false;
         $section_ready = '[' . $section . ']';
         $name_ready = $name . '=';
-        foreach ($this->lines as $line) {
+        foreach ($this->lines as $line_number => $line) {
             $line_ready = trim($line);
             if ($line_ready === $section_ready) {
                 $section_found = true;
@@ -133,10 +136,14 @@ class Darkyog
             }
             if ($section_found) {
                 if (0 === strpos($line_ready, $name_ready)) {
-                    $value = substr($line_ready, strlen($name_ready));
-                    echo $value;
+                    $this->lines[$line_number] = $name_ready . $value . $this->lineSeparator;
                 }
             }
         }
+    }
+
+    public function store()
+    {
+        return file_put_contents($this->path, join('', $this->lines));
     }
 }

@@ -51,6 +51,13 @@ class Darkyog
     protected $lines;
 
     /**
+     * Automatically detected line separator
+     *
+     * @var string
+     */
+    protected $lineSeparator;
+
+    /**
      * Sydark constructor.
      */
     public function __construct()
@@ -59,6 +66,17 @@ class Darkyog
         $this->path = str_replace(static::USERNAME_PLACEHOLDER, $this->user, static::PATH_TEMPLATE);
         $this->lines = file($this->path);
         $this->sourceData = parse_ini_file($this->path, true, INI_SCANNER_RAW);
+        $this->detectLineSeparator();
+    }
+
+    private function detectLineSeparator()
+    {
+        $this->lineSeparator = hex2bin('0d0a');
+        $line = bin2hex(reset($this->lines));
+        $test = substr($line, -4, 4);
+        if ($test !== $this->lineSeparator) {
+            $this->lineSeparator = PHP_EOL;
+        }
     }
 
     /**
@@ -69,7 +87,40 @@ class Darkyog
         $this->get('GENERALPREF', 'AutoCompleteTagsDir');
     }
 
+    /**
+     * Getter
+     *
+     * @param $section
+     * @param $name
+     */
     public function get($section, $name)
+    {
+        $section_found = false;
+        $section_ready = '[' . $section . ']';
+        $name_ready = $name . '=';
+        foreach ($this->lines as $line) {
+            $line_ready = trim($line);
+            if ($line_ready === $section_ready) {
+                $section_found = true;
+                continue;
+            }
+            if ($section_found) {
+                if (0 === strpos($line_ready, $name_ready)) {
+                    $value = substr($line_ready, strlen($name_ready));
+                    echo $value;
+                }
+            }
+        }
+    }
+
+    /**
+     * Setter
+     *
+     * @param $section
+     * @param $name
+     * @param $value
+     */
+    public function set($section, $name, $value)
     {
         $section_found = false;
         $section_ready = '[' . $section . ']';

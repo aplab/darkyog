@@ -107,7 +107,7 @@ class Darkyog
         $this->set('GENERALPREF', 'CanvasLineColor', static::rgb('313335'));#=3486513
         $this->set('GENERALPREF', 'CanvasTextColor', static::rgb('313335'));#=3486513
         $this->set('GENERALPREF', 'MTIBgColor', static::rgb('232525'));#=2434339
-        $this->set('GENERALPREF', 'MTIFgColor', static::rgb('ffffff'));#=16777215
+        $this->set('GENERALPREF', 'MTIFgColor', static::rgb('a9b7c6'));#=16777215
         $this->set('GENERALPREF', 'MTISelectionColor', static::rgb('232525'));#=2434339
 
         $this->set('Themedetails', 'ThemeFile', 'Dark.xml');
@@ -115,7 +115,7 @@ class Darkyog
 
         for ($i = 1; $i < 100; $i++) {
             $this->set('Connection ' . $i, 'ObjectbrowserBkcolor', static::rgb('3C3F41'));
-            $this->set('Connection ' . $i, 'ObjectbrowserFgcolor', static::rgb('ffffff'));
+            $this->set('Connection ' . $i, 'ObjectbrowserFgcolor', static::rgb('a9b7c6'));
         }
 
         mkdir(dirname($this->path) . '/themes');

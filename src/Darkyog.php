@@ -108,7 +108,7 @@ class Darkyog
         $this->set('GENERALPREF', 'CanvasTextColor', static::rgb('313335'));#=3486513
         $this->set('GENERALPREF', 'MTIBgColor', static::rgb('232525'));#=2434339
         $this->set('GENERALPREF', 'MTIFgColor', static::rgb('a9b7c6'));#=16777215
-        $this->set('GENERALPREF', 'MTISelectionColor', static::rgb('232525'));#=2434339
+        $this->set('GENERALPREF', 'MTISelectionColor', static::rgb('214283'));#=2434339 #232525
 
         $this->set('Themedetails', 'ThemeFile', 'Dark.xml');
         $this->set('Themedetails', 'ThemeType', '2');

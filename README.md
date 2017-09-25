@@ -11,4 +11,8 @@ and unzip into c:\php\
 
 2 download darkyog and unzip into any directory
 
-3 run bin/darkyog.bat under the current user (not the admin)
+3 close all sqlyog sessions and close sqlyog
+
+4 run bin/darkyog.bat under the current user (not the admin)
+
+5 start sqlyog

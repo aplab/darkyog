@@ -5,4 +5,10 @@ sqlyog dark theme customization like a darkula
 
 php executable needed
 
-c:\php\php.exe
+1 Download php http://windows.php.net/downloads/releases/php-7.1.9-nts-Win32-VC14-x64.zip 
+
+and unzip into c:\php\
+
+2 download darkyog and unzip into any directory
+
+3 run bin/darkyog.bat under the current user (not the admin)

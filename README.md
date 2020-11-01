@@ -16,3 +16,17 @@ and unzip into c:\php\
 4 run bin/darkyog.bat under the current user (not the admin)
 
 5 start sqlyog
+
+6 change left sidebar colors
+
+6.1
+![Screenshot](https://github.com/aplab/darkyog/blob/master/sidebar/1.png "Screenshot")
+
+6.2
+![Screenshot](https://github.com/aplab/darkyog/blob/master/sidebar/2.png "Screenshot")
+
+6.3
+![Screenshot](https://github.com/aplab/darkyog/blob/master/sidebar/3.png "Screenshot")
+
+6.4
+![Screenshot](https://github.com/aplab/darkyog/blob/master/sidebar/4.png "Screenshot")

@@ -19,14 +19,18 @@ and unzip into c:\php\
 
 6 change left sidebar colors
 
-6.1
+6.1 right click on connection tab
+
 ![Screenshot](https://github.com/aplab/darkyog/blob/master/sidebar/1.png "Screenshot")
 
-6.2
+6.2 change background color to dark (click to "other colors" in dropdown menu)
+
 ![Screenshot](https://github.com/aplab/darkyog/blob/master/sidebar/2.png "Screenshot")
 
-6.3
+6.3 change foreground color to white (click to "other colors" in dropdown menu)
+
 ![Screenshot](https://github.com/aplab/darkyog/blob/master/sidebar/3.png "Screenshot")
 
-6.4
+6.4 press OK, enjoy!
+
 ![Screenshot](https://github.com/aplab/darkyog/blob/master/sidebar/4.png "Screenshot")

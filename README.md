@@ -1,7 +1,7 @@
 # darkyog
 sqlyog dark theme customization like a darkula
 
-![Screenshot](https://aplab.ru/capsule/storage/920/f99/411/920f994114f63ee4ee0e1e84baf7eb81.png "Screenshot")
+![Screenshot](https://user-images.githubusercontent.com/4007240/146631670-810f1f2c-3179-4bde-9e7e-7c467c2855b9.png "Screenshot")
 
 php executable needed
 
